@@ -192,7 +192,7 @@ class LineBot extends EventEmitter {
    * @param {String} [options.callbackUrl] Registered callback path (not url!) (default: /callback)
    */
   listen(options = {}) {
-    return new Promise((resolve ,reject) => {
+    return new Promise((resolve, reject) => {
       const
         port = options.port,
         host = options.host || '0.0.0.0';
