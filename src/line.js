@@ -208,12 +208,12 @@ class LineBot extends EventEmitter {
         }, (req, res) => this._requestListener(req, res));
       }
 
-        this.server.listen(port, host, () => {
-          log('server listening in %s:%d', host, port);
-          resolve();
-        }).on('error', (e) => {
-          reject(e);
-        });
+      this.server.listen(port, host, () => {
+        log('server listening in %s:%d', host, port);
+        resolve();
+      }).on('error', (e) => {
+        reject(e);
+      });
     });
   }
 
