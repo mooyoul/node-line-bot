@@ -194,7 +194,7 @@ class LineBot extends EventEmitter {
   listen(options = {}) {
     return new Promise((resolve, reject) => {
       const
-        port = options.port,
+        port = options.port || 9000,
         host = options.host || '0.0.0.0';
 
       this._callbackUrl = options.callbackUrl || '/callback';
