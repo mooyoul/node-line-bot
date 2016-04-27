@@ -43,5 +43,11 @@
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.4.5",
     "mocha-lcov-reporter": "^1.2.0"
+  },
+  "dependencies": {
+    "bl": "^1.1.2",
+    "bluebird": "^3.3.5",
+    "debug": "^2.2.0",
+    "request": "^2.72.0"
   }
 }
